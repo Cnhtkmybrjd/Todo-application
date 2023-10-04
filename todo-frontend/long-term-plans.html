@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <script defer src="script/todo-app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(params) {
+            createTodoApp(document.getElementById('todo-app'), 'Долгосрочные планы', 'Long term plans');
+        })
+    </script>
+</head>
+<body>
+    <div class="container mb-5">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Личные дела</a>
+            <a href="work-todos.html" class="nav-link">Рабочие дела</a>
+            <a href="long-term-plans.html" class="nav-link">Долгосрочные планы</a>
+        </nav>
+    </div>
+
+    <div class="container" id="todo-app"></div>
+</body>
+</html>
